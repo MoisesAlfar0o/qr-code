@@ -1,0 +1,66 @@
+:root {
+    --primary-bg: hsl(212, 45%, 89%);
+    --card-bg: hsl(0, 0%, 100%);
+    --text-primary: hsl(218, 44%, 22%);
+    --text-secondary: hsl(216, 15%, 48%);
+}
+
+body{
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--primary-bg);
+    font-size: 15px;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}   
+
+.card{
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card__content{
+    align-items: center;
+    text-align: center;
+    width: 250px;
+}
+
+.card__content img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card__content h1, .card__content p {
+    margin: 15px 10px;
+}
+
+.card__content h1{
+    color: var(--text-primary); 
+    font-size: 1rem;
+}
+
+.card__content p{
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
